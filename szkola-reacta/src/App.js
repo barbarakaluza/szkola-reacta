@@ -4,7 +4,13 @@ import Home from "./home";
 import News from './components/News';
 import Timer from './components/Timer/Timer';
 
-function App() {
+
+const styles = {
+  backgroundColor: "#FCB9B2",
+  color: "#461220",
+  border: "#B23A48",
+  borderWeight: "5px"
+}
 
 
 const data = [
@@ -13,12 +19,10 @@ const data = [
   {header: 'Nowe logo miasta', intro: 'Poznań zmienia swoje logo'}, 
 ]
 
-
-
-
+function App() {
 
   return (
-    <div className="App">
+    <div className="App" style={styles}>
 
       <Timer/>
       <Home/>
